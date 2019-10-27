@@ -61,7 +61,7 @@ function draw (src){
       photo.innerHTML +='<a href="#" class="box_x" onclick="click_x()">×</a>' ;
       photo.style ="position: absolute ";
       photo.innerHTML +=' <p class="para">'+txt[value]+'</p>';
-      photo.innerHTML +='<a href="#" id="left" class="left" onclick="move(event)">'+'<a href="#" id="left" onclick="move(event)" class="back">back</a>'+'</a><a  href="#" id="right" class="right" onclick="move(event)">'+'<a href="#"  id="right" class="next" onclick="move(event)" >next</a>'+'</a>';
-      if(value==l-1){   document.getElementsByClassName("next")[0].style.color ="gainsboro";}
-      if(value==0){   document.getElementsByClassName("back")[0].style.color ="gainsboro";}
+      photo.innerHTML +='<a href="#" id="left" class="left" onclick="move(event)">'+'<a href="#" id="left" onclick="move(event)" class="back"><</a>'+'</a><a  href="#" id="right" class="right" onclick="move(event)">'+'<a href="#"  id="right" class="next" onclick="move(event)" >></a>'+'</a>';
+      if(value==l-1){   document.getElementsByClassName(">")[0].style.color ="gainsboro";}
+      if(value==0){   document.getElementsByClassName("<")[0].style.color ="gainsboro";}
               }
